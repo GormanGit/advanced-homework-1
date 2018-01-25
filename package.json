@@ -1,4 +1,3 @@
-
 {
   "name": "advanced-homework-1",
   "version": "0.1.0",
@@ -17,7 +16,7 @@
     "react-dom": "^15.5.4"
   },
   "scripts": {
-    "start": "nf start",
+    "start": "react-scripts start",
     "lint": "eslint src",
     "react-app": "react-scripts start",
     "api": "json-server --id _id --watch --port 4000 db.json",
