@@ -5,7 +5,7 @@ export default {
     "description": "Psychotropic drugs, not elsewhere classified",
     "reviews": 46,
     "rating": 2,
-    "imgUrl": "http://dummyimage.com/136x167.bmp/cc0000/ffffff",
+    "imgUrl": "http://www.simonstalenhag.se/bilder/bio_thepin.jpg",
     "price": "$95.11"
   }, {
     "id": 2,
@@ -13,7 +13,7 @@ export default {
     "description": "You will be so happy when you use this product",
     "reviews": 2,
     "rating": 2,
-    "imgUrl": "http://dummyimage.com/125x134.jpg/cc0000/ffffff",
+    "imgUrl": "http://www.simonstalenhag.se/bilder/theflood1.jpg",
     "price": "$37.09"
   }, {
     "id": 3,

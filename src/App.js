@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
@@ -7,15 +7,17 @@ import ProductDetail from "./Components/ProductDetail";
 import Carousel from "./Components/Carousel";
 
 function App(props) {
-  const productMap = (props) => {
-    props.product.products.map(
-      
-    )
-    console.log(props.product.products[0]);
-  };productMap(props);
 
-    // console.log(props)
+  const proDetails = props.products.map(product => {
+    console.log(product);
+    return <ProductDetail products={product} />;
+
+  });
+  // proDetails();
+  // console.log(props.products);
+
   return (
+
     <div className="App">
 
       <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -61,23 +63,23 @@ function App(props) {
             <Carousel />
 
             <div className="row">
-              <ProductDetail product={props.product.products[0]} />
-              <ProductDetail product={props.product.products[1]} />
-              <ProductDetail product={props.product.products[2]} />
-              <ProductDetail product={props.product.products[3]} />
-              <ProductDetail product={props.product.products[4]} />
-              <ProductDetail product={props.product.products[5]} />
+              {proDetails}
+              {/*<ProductDetail prod={props.products[1]} />*/}
+              {/*<ProductDetail prod={props.products[2]} />*/}
+              {/*<ProductDetail prod={props.products[3]} />*/}
+              {/*<ProductDetail prod={props.products[4]} />*/}
+              {/*<ProductDetail prod={props.products[5]} />*/}
 
-              {/*<div className="col-sm-4 col-lg-4 col-md-4">*/}
-                {/*<h4><a href="#">Like this template?</a>*/}
-                {/*</h4>*/}
-                {/*<p>If you like this template, then check out <a target="_blank"*/}
-                                                                {/*href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this*/}
-                  {/*tutorial</a> on how to build a working review system for your online store!</p>*/}
-                {/*<a className="btn btn-primary" target="_blank"*/}
-                   {/*href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">View*/}
-                  {/*Tutorial</a>*/}
-              {/*</div>*/}
+              <div className="col-sm-4 col-lg-4 col-md-4">
+                <h4><a href="#">Like this template?</a>
+                </h4>
+                <p>If you like this template, then check out <a target="_blank"
+                                                                href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this
+                  tutorial</a> on how to build a working review system for your online store!</p>
+                <a className="btn btn-primary" target="_blank"
+                   href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">View
+                  Tutorial</a>
+              </div>
 
             </div>
 

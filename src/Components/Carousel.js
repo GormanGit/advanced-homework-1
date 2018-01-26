@@ -13,15 +13,16 @@ function Carousel() {
           </ol>
           <div className="carousel-inner">
             <div className="item active">
-              <img className="slide-image" src="http://placehold.it/800x300" alt=""/>
+              <img className="slide-image" src="http://www.simonstalenhag.se/bilderbig/by_gathering3_2880.jpg" alt=""/>
             </div>
             <div className="item">
-              <img className="slide-image" src="http://placehold.it/800x300" alt=""/>
+              <img className="slide-image" src="http://www.simonstalenhag.se/bilder/by_billboards.jpg" alt=""/>
             </div>
             <div className="item">
-              <img className="slide-image" src="http://placehold.it/800x300" alt=""/>
+              <img className="slide-image" src="http://www.simonstalenhag.se/bilder/by_localservers.jpg" alt=""/>
             </div>
           </div>
+
           <a className="left carousel-control" href="#carousel-example-generic" data-slide="prev">
             <span className="glyphicon glyphicon-chevron-left"></span>
           </a>
