@@ -8,7 +8,7 @@ import Carousel from "./Components/Carousel";
 
 function App(props) {
 
-  const proDetails = props.products.map(product => {
+  const prodDetails = props.products.map(product => {
     console.log(product);
     return <ProductDetail products={product} />;
 
@@ -63,7 +63,7 @@ function App(props) {
             <Carousel />
 
             <div className="row">
-              {proDetails}
+              {prodDetails}
               {/*<ProductDetail prod={props.products[1]} />*/}
               {/*<ProductDetail prod={props.products[2]} />*/}
               {/*<ProductDetail prod={props.products[3]} />*/}
