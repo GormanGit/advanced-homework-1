@@ -13,7 +13,7 @@ export default {
     "description": "You will be so happy when you use this product",
     "reviews": 2,
     "rating": 2,
-    "imgUrl": "http://www.simonstalenhag.se/bilder/theflood1.jpg",
+    "imgUrl": "http://www.simonstalenhag.se/bilder/bio_tv.jpg",
     "price": "$37.09"
   }, {
     "id": 3,
@@ -21,7 +21,7 @@ export default {
     "description": "Other disorders of continuity of bone, unsp tibia and fibula",
     "reviews": 27,
     "rating": 5,
-    "imgUrl": "http://dummyimage.com/149x190.jpg/dddddd/000000",
+    "imgUrl": "http://www.simonstalenhag.se/bilder/bio_kaffeburk.jpg",
     "price": "$51.83"
   }, {
     "id": 4,
@@ -29,7 +29,7 @@ export default {
     "description": "Orchard as the place of occurrence of the external cause",
     "reviews": 60,
     "rating": 3,
-    "imgUrl": "http://dummyimage.com/162x153.jpg/cc0000/ffffff",
+    "imgUrl": "http://www.simonstalenhag.se/bilder/bio_gameboy.jpg",
     "price": "$86.93"
   }, {
     "id": 5,
@@ -37,7 +37,7 @@ export default {
     "description": "Injury of prostate",
     "reviews": 20,
     "rating": 1,
-    "imgUrl": "http://dummyimage.com/120x245.jpg/cc0000/ffffff",
+    "imgUrl": "http://www.simonstalenhag.se/bilder/bio_modem.jpg",
     "price": "$70.10"
   }, {
     "id": 6,
@@ -45,7 +45,7 @@ export default {
     "description": "this stuff is awesome",
     "reviews": 79,
     "rating": 3,
-    "imgUrl": "http://dummyimage.com/211x227.bmp/5fa2dd/ffffff",
+    "imgUrl": "http://www.simonstalenhag.se/bilder/bio_stereo.jpg",
     "price": "$39.25"
   }, {
     "id": 7,

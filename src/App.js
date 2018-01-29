@@ -8,13 +8,10 @@ import Carousel from "./Components/Carousel";
 
 function App(props) {
 
-  const prodDetails = props.products.map(product => {
+  const prodDetails = props.products.map((product, keys) => {
     console.log(product);
-    return <ProductDetail products={product} />;
-
+    return <ProductDetail products={product} key={keys} />;
   });
-  // proDetails();
-  // console.log(props.products);
 
   return (
 
@@ -23,9 +20,7 @@ function App(props) {
       <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div className="container">
 
-          {/*{Header Goes Hear}*/}
-          <Header />
-
+          <Header/>
 
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav">
@@ -60,15 +55,10 @@ function App(props) {
           </div>
 
           <div className="col-md-9">
-            <Carousel />
+            <Carousel/>
 
             <div className="row">
               {prodDetails}
-              {/*<ProductDetail prod={props.products[1]} />*/}
-              {/*<ProductDetail prod={props.products[2]} />*/}
-              {/*<ProductDetail prod={props.products[3]} />*/}
-              {/*<ProductDetail prod={props.products[4]} />*/}
-              {/*<ProductDetail prod={props.products[5]} />*/}
 
               <div className="col-sm-4 col-lg-4 col-md-4">
                 <h4><a href="#">Like this template?</a>
@@ -91,9 +81,9 @@ function App(props) {
 
       <div className="container">
 
-        <hr />
+        <hr/>
 
-        <Footer />
+        <Footer/>
 
 
       </div>
