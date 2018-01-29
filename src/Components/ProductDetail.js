@@ -6,7 +6,7 @@ function ProductDetail(props) {
     const argument = props.products.rating;
     let arr = [];
     for (let i = 0; i < argument; i++) {
-      arr.push(<span className="glyphicon glyphicon-star" key={i} ></span>);
+      arr.push(<span className="glyphicon glyphicon-star" key={i}></span>);
     }
     return arr;
   };
@@ -19,7 +19,8 @@ function ProductDetail(props) {
           <h4 className="pull-right">{props.products.price}</h4>
           <h4><a href="#">{props.products.name}</a>
           </h4>
-          <p>{props.products.description} <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp-http://bootsnipp.com</a>
+          <p>{props.products.description} <a target="_blank"
+                                             href="http://www.bootsnipp.com">Bootsnipp-http://bootsnipp.com</a>
           </p>
           <div>
 
