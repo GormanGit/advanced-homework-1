@@ -1,6 +1,7 @@
 import React from "react";
 
-function Header() {
+function Header(props) {
+
   return (
     <div className="navbar-header">
       <button type="button" className="navbar-toggle" data-toggle="collapse"
@@ -11,6 +12,7 @@ function Header() {
         <span className="icon-bar"></span>
       </button>
       <a className="navbar-brand" href="#">Start Bootstrap</a>
+      <a className="navbar-brand">Cart {props.items} Items</a>
     </div>
 
   );

@@ -5,12 +5,13 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import ProductDetail from "./Components/ProductDetail";
 import Carousel from "./Components/Carousel";
+// import state from "./state";
 
 function App(props) {
 
   const prodDetails = props.products.map((product, keys) => {
-    console.log(product);
-    return <ProductDetail products={product} key={keys} />;
+    // console.log(product);
+    return <ProductDetail items={props.items} increaseCart={props.increaseCart} products={product} key={keys} />;
   });
 
   return (
@@ -20,7 +21,7 @@ function App(props) {
       <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div className="container">
 
-          <Header/>
+          <Header items={props.items} increaseCart={props.increaseCart} />
 
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav">

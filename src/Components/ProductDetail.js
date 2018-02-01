@@ -4,9 +4,10 @@ function ProductDetail(props) {
 
   const starz = () => {
     const argument = props.products.rating;
-    let arr = [];
+    let arr = [<span className="glyphicon glyphicon-star-empty" key={0} />, <span className="glyphicon glyphicon-star-empty"key={1} />,<span className="glyphicon glyphicon-star-empty"key={2}/>, <span className="glyphicon glyphicon-star-empty"key={3}/>
+    , <span className="glyphicon glyphicon-star-empty" key={4} />];
     for (let i = 0; i < argument; i++) {
-      arr.push(<span className="glyphicon glyphicon-star" key={i}></span>);
+      arr.unshift(<span className="glyphicon glyphicon-star" key={i} />);
     }
     return arr;
   };
@@ -19,8 +20,7 @@ function ProductDetail(props) {
           <h4 className="pull-right">{props.products.price}</h4>
           <h4><a href="#">{props.products.name}</a>
           </h4>
-          <p>{props.products.description} <a target="_blank"
-                                             href="http://www.bootsnipp.com">Bootsnipp-http://bootsnipp.com</a>
+          <p>{props.products.description} <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp-http://bootsnipp.com</a>
           </p>
           <div>
 
@@ -30,9 +30,14 @@ function ProductDetail(props) {
         <div className="ratings">
           <p className="pull-right">{props.products.reviews}</p>
           <p>
-            {/*<button id="addToCart">Add To Cart</button>*/}
+            <button onClick={()=> {
+              props.increaseCart();
+            }
+            }>Add to Cart
+            </button>
             {starz()}
           </p>
+          {/*<p>{props.items}</p>*/}
         </div>
       </div>
     </div>
